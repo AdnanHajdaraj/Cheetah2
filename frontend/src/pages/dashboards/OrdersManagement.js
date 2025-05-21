@@ -186,7 +186,7 @@ const OrdersManagement = () => {
             <Card>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  {t('dashboard.totalOrders')}
+                  {t('Total Orders')}
                 </Typography>
                 <Typography variant="h4">{stats.total}</Typography>
               </CardContent>
@@ -196,7 +196,7 @@ const OrdersManagement = () => {
             <Card>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  {t('dashboard.pendingOrders')}
+                  {t('Pending Orders')}
                 </Typography>
                 <Typography variant="h4">{stats.pending}</Typography>
               </CardContent>
@@ -206,7 +206,7 @@ const OrdersManagement = () => {
             <Card>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  {t('dashboard.processingOrders')}
+                  {t('Processing Orders')}
                 </Typography>
                 <Typography variant="h4">{stats.processing}</Typography>
               </CardContent>
@@ -216,7 +216,7 @@ const OrdersManagement = () => {
             <Card>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  {t('dashboard.totalRevenue')}
+                  {t('Total Revenue')}
                 </Typography>
                 <Typography variant="h4">${stats.revenue.toFixed(2)}</Typography>
               </CardContent>
@@ -246,14 +246,14 @@ const OrdersManagement = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>{t('common.orderNumber')}</TableCell>
-              <TableCell>{t('common.customer')}</TableCell>
-              <TableCell>{t('common.email')}</TableCell>
-              <TableCell align="right">{t('common.total')}</TableCell>
-              <TableCell>{t('common.items')}</TableCell>
-              <TableCell>{t('common.date')}</TableCell>
-              <TableCell>{t('common.status')}</TableCell>
-              <TableCell align="center">{t('common.actions')}</TableCell>
+              <TableCell>{t('Order Number')}</TableCell>
+              <TableCell>{t('Customer')}</TableCell>
+              <TableCell>{t('Email')}</TableCell>
+              <TableCell align="right">{t('Total')}</TableCell>
+              <TableCell>{t('Items')}</TableCell>
+              <TableCell>{t('Date')}</TableCell>
+              <TableCell>{t('Status')}</TableCell>
+              <TableCell align="center">{t('Actions')}</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -313,17 +313,17 @@ const OrdersManagement = () => {
       {/* Edit Order Status Dialog */}
       <Dialog open={openDialog} onClose={handleCloseDialog}>
         <DialogTitle>
-          {t('common.editOrder')} - {selectedOrder?.orderNumber}
+          {t('Edit Order')} - {selectedOrder?.orderNumber}
         </DialogTitle>
         <DialogContent>
           <Box sx={{ pt: 2 }}>
             <FormControl fullWidth>
-              <InputLabel>{t('common.status')}</InputLabel>
+              <InputLabel>{t('Status')}</InputLabel>
               <Select
                 name="status"
                 value={formData.status}
                 onChange={handleFormChange}
-                label={t('common.status')}
+                label={t('Status')}
               >
                 <MenuItem value="pending">{t('common.statuses.pending')}</MenuItem>
                 <MenuItem value="processing">{t('common.statuses.processing')}</MenuItem>
@@ -333,9 +333,9 @@ const OrdersManagement = () => {
           </Box>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleCloseDialog}>{t('common.cancel')}</Button>
+          <Button onClick={handleCloseDialog}>{t('Cancel')}</Button>
           <Button onClick={handleSubmit} variant="contained" color="primary">
-            {t('common.save')}
+            {t('Save')}
           </Button>
         </DialogActions>
       </Dialog>

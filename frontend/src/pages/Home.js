@@ -33,23 +33,23 @@ const Home = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: 'Product 1',
+      name: 'Tastiera Genesis Rhod 350 RGB',
       price: 99.99,
-      image: 'https://via.placeholder.com/300',
+      image: '/images/electronics/tastiere-genesis-rhod-350-rgb-yll.avif',
       category: 'Electronics',
     },
     {
       id: 2,
-      name: 'Product 2',
+      name: 'Qafore nr forme zemre',
       price: 149.99,
-      image: 'https://via.placeholder.com/300',
+      image: '/images/accessories/necklace.jpeg',
       category: 'Fashion',
     },
     {
       id: 3,
-      name: 'Product 3',
+      name: 'Pasqyrë Murale Oval',
       price: 199.99,
-      image: 'https://via.placeholder.com/300',
+      image: '/images/house/nextdeco-oval-wall-mirror-gold-metal-frame-50x70cm-nxt-200010855-0.avif',
       category: 'Home & Living',
     },
   ];

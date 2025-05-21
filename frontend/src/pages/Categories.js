@@ -54,14 +54,14 @@ const Categories = () => {
     {
       id: 4,
       name: t('Toys And Games'),
-      image: '/images/toys&games/ICON-toysandgames.jpeg',
+      image: '/images/toys_games/ICON-toysandgames.jpeg',
       description: t('Toys, Games and Consoles'),
       category: 'toys&games'
     },
     {
       id: 5,
       name: t('Books And School'),
-      image: '/images/books&school_supplies/ICON-booksandschool.jpeg',
+      image: '/images/books_school_supplies/ICON-booksandschool.jpeg',
       description: t('Books And School Supplies'),
       category: 'books&school_supplies'
     },
